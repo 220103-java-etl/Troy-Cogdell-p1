@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RequestForm</title>
+</head>
+<body>
+<form id="requestForm" method="post" action="requestform" target="_self">
+    <div class="header">
+        <h1 class="header"><strong>Request Form</strong></h1>
+        <p> What is the course name?</p>
+        <input type="text" id="title" name="title" placeholder="title" required>
+        <p>When does the course start?</p> <!-- date -->
+        <input type="date" id="date" name="date" required>
+        <p> Where is the course's location?</p>
+        <input type="text" id="location" name="location" placeholder="location" required>
+        <p>How much does the course cost?</p>
+        <input type="number" id="amount" name="amount" placeholder="amount" required>
+        <p>Please describe how the course relates to your job</p>
+        <textarea type="text" id="justification" name="justification" placeholder="Work Justification" required></textarea>
+        <button type="submit" id="submitRequest" type="submit" value="submit">Submit Request</button>
+        <a class="button" id="backToEmployeeBtn" href="Employee.html" style="text-decoration: none;">Return</a>
+    </div>
+</form>
+<script src="reimbursement-script.js"></script>
+</body>
+</html>
